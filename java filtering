@@ -1,0 +1,13 @@
+<!-- Add this script before the closing </body> tag in your HTML -->
+<script>
+    function filterExperience(company) {
+        const experiences = document.querySelectorAll('.experience-item');
+        experiences.forEach(item => {
+            if (item.innerText.includes(company)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
+</script>
